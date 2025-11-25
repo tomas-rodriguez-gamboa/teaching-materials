@@ -1,0 +1,35 @@
+.gitignore
+# LaTeX intermediate files
+*.aux
+*.log
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.nav
+*.snm
+*.vrb
+*.lof
+*.lot
+*.bbl
+*.blg
+*.run.xml
+*.bcf
+
+# Generated PDF sync files
+*.synctex.gz
+
+# macOS
+.DS_Store
+
+# Temporary folders
+_build/
+latex.out/
+temp/
+tmp/
+
+# Latexmk
+latexmkrc
+
+
