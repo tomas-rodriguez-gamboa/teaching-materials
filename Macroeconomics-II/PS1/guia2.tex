@@ -1,0 +1,173 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm} 
+% Opción 2: Ajustar el espacio entre el encabezado y el contenido
+\setlength{\headsep}{1.5cm} % Ajusta esta distancia según sea necesario
+
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{} % Limpia los encabezados y pies de página por defecto
+\fancyhead[L]{\vspace{0pt}\includegraphics[width=1.5cm]{uah.jpg}} % Ajuste sin espacio extra
+\fancyhead[C]{Macroeconomía II}
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0.1cm}
+\section*{Guía 2}
+
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa. \\
+\textbf{Fecha:} Noviembre del 2024.
+\end{center}
+\end{flushleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Instrucciones}
+\begin{itemize}
+\item Esta guía es de carácter voluntario y sirve como preparación a la solemne 2.
+\item Haga los ejercicios a consciencia.
+\item La entrega es individual pero se pueden apoyar entre ustedes.
+\item Entrega por correo o teams al ayudante.
+\end{itemize}
+
+\section*{Ejercicios.}
+
+\begin{enumerate} 
+\item Las familias desean maximizar su utilidad, donde el problema de maximización queda expresado de la siguiente manera:  
+
+\begin{equation*}
+\max U(C_t,B_t, M_t): ln(C_1)+ \beta ln(C_2) + ln \left(\frac{M_1}{P_1}\right)+\beta ln \left(\frac{M_2}{P_2}\right)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} P_1 C_1=&P_1 Y + \frac{B_2}{R}- M_1 - T_1\\
+     P_2 C_2=&P_2 Y - B_2 + M_1 - M_2 - T_2
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+\item Transformar las variables a términos reales. Anote todos los supuestos que considere necesarios.
+\item Plantear el problema de máximización. 
+\item Encontrar Euler- Lagrange de consumo.
+\item Resolver los siguientes casos
+\begin{enumerate}[label=\alph*.\arabic*)]
+        \item Se desea que $C_2=C_1$.
+        \item No se interviene .
+ \end{enumerate}
+ 
+\item Resuelva ahora suponiendo que: 
+\begin{equation*}
+    g_1= - \frac{b_2}{R}(1+\pi_2) + t_1 + m_1,
+\end{equation*}
+\begin{equation*}
+        g_2= b_2- \frac{m_1}{(1+\pi_2)}  + m_2 + t_2,
+\end{equation*}
+donde: 
+
+$g_1=g_2=0$.
+
+\item Encuentre: \textbf{demanda de dinero para ambos periodos y oferta de dinero.}
+\item Resuelva el equilibrio monetario.
+\end{enumerate}
+
+
+
+
+ 
+\item Las familias desean maximizar su utilidad, donde el problema de maximización queda expresado de la siguiente manera:  
+\begin{equation*}
+\max U(C_t,B_t, M_t): ln(C_1)+ \beta ln(C_2) + ln \left(m_1\right)+\beta ln \left(m_2\right)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&Y + \frac{b_2}{R}\frac{P_2}{P_1}- m_1 - t_1\\
+      C_2=& Y - b_2 + m_1\frac{P_1}{P_2} - m_2 - t_2
+\end{align*}
+
+
+Por otro lado, la economía es la siguiente:
+\\
+
+\textbf{Banco Central}
+
+\begin{equation*}
+    M_2=(1+\mu)M_1
+\end{equation*}
+
+\textbf{Gobierno}
+
+\begin{equation*}
+    G_1=G_2=0
+\end{equation*}
+
+\textbf{Equilibrio}
+
+\begin{equation*}
+    Y=C_1=C_2
+\end{equation*}
+
+\begin{enumerate}[label=\alph*)]
+\item Encuentre la demanda, oferta de dinero y equilibrio del mercado monetario. Anote todos los supuestos que considere necesarios. (\textbf{Ojo: verificar si las variables ya son nominales o reales})
+\item ¿Qué ocurre si disminuye $\mu$?
+\item ¿Qué ocurre si aumenta $\mu$?
+\item ¿Qué ocurre si aumenta y?
+\item Repita b),c) y d), pero ahora suponiendo que:
+\begin{equation*}
+    g_1= - \frac{b_2}{R}(1+\pi_2) + t_1 + m_1,
+\end{equation*}
+\begin{equation*}
+        g_2= b_2- \frac{m_1}{(1+\pi_2)}  + m_2 + t_2,
+\end{equation*}
+donde: 
+
+$g_1=g_2=0$.
+\end{enumerate}
+
+\newpage
+    \item  Modelo Neo Keynesiano, suponga la siguiente economía:
+
+\begin{gather}
+c_t=c_{t+1} - (r_t- \pi_{t+1})+\mu_t^d\\[10pt]
+w_t=\rho w_{t-1} + (1-\rho)(c_t + n_t)\\[10pt]
+y_t=a_t+n_t\\[10pt]
+cmg_t^r=w_t\\[10pt]
+\pi_t=\beta \pi_{t+1}+\lambda cmg_t^r + \mu_t^s\\[10pt]
+r_t=\phi \pi_t + \mu_t^m\\[10pt]
+y_t=c_t
+\end{gather}
+
+\begin{enumerate}
+ \item Analice un shock de oferta ($\mu_t^s > 0$), suponiendo que ($\rho$ = 0). Grafique los impulsos
+respuesta de la economía.
+\item Analice un shock de oferta ($\mu_t^s
+> 0$), suponiendo que ($\rho > 0$). Grafique los impulsos
+respuesta de la economía.
+\item  Analice un shock de demanda ($\mu_t^d
+> 0$), suponiendo que( $\rho > 0. $ )Grafique los impulsos
+respuesta de la economía.
+\item Considerando la rigidez de los salarios en los apartados b) y c). ¿Cómo tiene que actuar la política monetaria?
+ \item Analice un shock de oferta ($\mu_t^s > 0$), suponiendo que ($\rho$ = 0) y que ($\phi>1$). Grafique los impulsos
+respuesta de la economía.
+ \item Analice un shock de oferta ($\mu_t^s > 0$), suponiendo que ($\rho$ = 0) y que ($\phi<1$). Grafique los impulsos
+respuesta de la economía.
+\item ¿Qué valor de $\phi$ hace que la política monetaria sea más efectiva?
+\end{enumerate}
+
+
+
+\end{enumerate}
+\end{document}
