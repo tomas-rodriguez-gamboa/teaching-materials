@@ -1,0 +1,85 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 8}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García. \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa. \\
+\textbf{Fecha:} Noviembre del 2024.
+\end{center}
+\end{flushleft}
+
+\begin{enumerate}
+    \item  Modelo Neo Keynesiano en economía abierta , suponga la siguiente economía:
+    
+\begin{gather}
+c_t=c_{t+1} - (r_t- \pi_{t+1})+\mu_t^d,\\[10pt]
+w_t= c_t+n_t\\[10pt]
+n_t-m_t=e_t-w_t\\[10pt]
+y_t=\alpha n_t+(1-\alpha)m_t,\\[10pt]
+cmg_t=\alpha w_t+(1-\alpha)e_t,\\[10pt]
+\pi_t=\beta \pi_{t+1}+\lambda cmg_t ,\\[10pt]
+r_t=\phi \pi_t + \mu_t^m,\\[10pt]
+y_t=\gamma c_t + (1-\gamma)e_t\\[10pt]
+e_t=e_{t+1}-(r_t-\pi_{t+1})+PR\\[10pt]
+PR=\theta c_t+\mu_t^{PR}
+\end{gather}
+
+\begin{enumerate}
+    \item Suponga un shock de premio por riesgo, $\mu^{PR}_t>0$
+\end{enumerate}
+
+\item Suponga el siguiente modelo con generaciones traslapadas:
+
+\begin{align*}
+    \max \ln(C_1,_t)&+\beta \ln(C_2,_{t+1)}\\[10pt]
+    s.a: &C_1,_t + S_1,_t=w_1,_t\\
+    &C_2,_t=RS_1,_t
+\end{align*}
+
+Donde las firmas se representan por
+
+\begin{equation*}
+    Y_t=AK_t^\alpha N_t^{1-\alpha}
+\end{equation*}
+
+Además, la demografía viene dada por:
+
+\begin{equation*}
+    N_{t+1}=(1+n)N_t
+\end{equation*}
+
+Además, el equilibrio viene dado por:
+
+\begin{gather*}
+    k_{t+1}=s_1,_t n_t\\
+    w_1,_t=f(k_t)-k_tf' (k_t)
+\end{gather*}
+donde sabemos  que $k_t=K_t/N_t$
+\begin{enumerate}
+    \item Encuentre la ecuación que explica la dinamica de $k_t$ (ecuación y gráfico)
+\end{enumerate}
+    
+\end{enumerate}
+\end{document}
