@@ -1,0 +1,68 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 1}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudantes:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Agosto del 2024
+\end{center}
+\end{flushleft}
+
+
+\section*{Resumen}
+
+Entender la importancia de las decisiones de consumo y ahorro de los hogares  para las fluctuaciones de la economía, mediante sus restricciones.
+
+
+\begin{enumerate}
+    \item Suponga el siguiente problema de maximización:
+\end{enumerate}
+
+\begin{align}
+    \max_{c_1,c_2}&= ln C_1 + \beta lnC_2\\  
+    s.a: C_1&= Y_1 + \frac{b}{R}\\
+         C_2&= Y_2 - b
+\end{align}
+
+\begin{enumerate}[label=\alph*)]
+    \item Plantear el Lagrangeano.
+    \item Encontrar Euler.
+    \item Analice que ocurre con el consumo dado: $\beta$R $<$ 1.
+    \item Analice que ocurre con el consumo dado: $\beta$R = 1.
+    \item Analice que ocurre con el consumo dado: $\beta$R $>$ 1.
+    \item Repita a) y b) pero ahora con el siguiente problema de maximización.
+
+
+\begin{align}
+   U&=\frac{C^{1-\sigma}-1}{1-\sigma} \\  
+    s.a&: C_1 + \frac{C_2}{1+R}=B
+\end{align}
+
+\item Explique que significa $\sigma$.
+
+\end{enumerate}
+
+
+\end{document}
