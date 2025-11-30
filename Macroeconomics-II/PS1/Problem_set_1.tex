@@ -1,0 +1,237 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm} 
+% Opción 2: Ajustar el espacio entre el encabezado y el contenido
+\setlength{\headsep}{1.5cm} % Ajusta esta distancia según sea necesario
+
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{} % Limpia los encabezados y pies de página por defecto
+\fancyhead[L]{\vspace{0pt}\includegraphics[width=1.5cm]{uah.jpg}} % Ajuste sin espacio extra
+\fancyhead[C]{Macroeconomía II}
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0.1cm}
+\section*{Problem Set 1
+}
+
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudante:}  Tomás Rodríguez Gamboa \\
+\textbf{Fecha:}  Septiembre del 2024
+\end{center}
+\end{flushleft}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Instrucciones}
+\begin{itemize}
+\item Esta guía es de carácter voluntario y sirve como preparación a la solemne 1.
+\item Haga los ejercicios a consciencia.
+\item La entrega es individual pero se pueden apoyar entre ustedes.
+\item El plazo de entrega es hasta las 23:59 del 29 de septiembre .
+\item Entrega  en formato PDF por Correo, Teams o presencial al ayudante.
+\end{itemize}
+
+\section*{Ejercicios de optimización}
+
+\begin{enumerate}
+    \item \textbf{Utilidad (Cobb--Douglas).} \\
+    Una persona tiene utilidad
+    \[
+        U(x,y)=x^{1/2}y^{1/2},
+    \]
+    precios \(p_x=1\), \(p_y=2\) e ingreso \(M=40\). \\
+    Maximizar \(U(x,y)\) sujeto a la restricción presupuestaria
+    \[
+        x+2y=40.
+    \]
+    \textit{Hint:} \(\mathcal{L}=x^{1/2}y^{1/2}+\lambda(40-x-2y)\).
+
+    \item \textbf{Producción (no lineal).} \\
+    Función de producción
+    \[
+        f(x,y)=x^{0.3}y^{0.7}.
+    \]
+    Restricción de recursos:
+    \[
+        2x+3y=120.
+    \]
+    Encontrar \(x,y\) que maximicen \(f(x,y)\) sujeto a la restricción. \\
+    \textit{Hint:} \(\mathcal{L}=x^{0.3}y^{0.7}+\lambda(120-2x-3y)\).
+
+    \item \textbf{Utilidad (log).} \\
+    Consumidor con utilidad
+    \[
+        U(x,y)=\ln x+\ln y,
+    \]
+    precios \(p_x=2\), \(p_y=1\) e ingreso \(M=60\). \\
+    Maximizar \(U(x,y)\) sujeto a
+    \[
+        2x+y=60.
+    \]
+    \textit{Hint:} \(\mathcal{L}=\ln x+\ln y+\lambda(60-2x-y)\). (recuerda \(x,y>0\)).
+\end{enumerate}
+
+
+\section*{Ejercicios Macroeconomía II}
+
+\begin{enumerate}
+
+\item Suponga que las familias desean maximizar su utilidad, donde el problema del consumidor se puede representar por medio del siguiente problema de maximización.
+
+\begin{equation*}
+\max U(C_t,N_t): ln (C_1)- \frac{N_1^{1+\rho}}{1+\rho} - \beta ln (C_2) -\beta \frac{ N_2^{1+\rho}}{1+\rho} 
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 + \frac{B_2}{R}\\
+     C_2=&w_2 N_2 + B_2
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+    \item Exprese el problema de maximización de la economía para dos períodos.
+    \item Encuentre el Euler-Lagrange de consumo.
+    \item Encuentre la oferta de trabajo para cada período
+\end{enumerate}
+
+
+\item Suponga las familias desean maximizar su utilidad, donde el problema de maximización queda expresado de la siguiente manera:
+
+\begin{equation*}
+\max U(C_t,N_t):  \frac{C_{1}^{1-\sigma}}{1-\sigma} + \beta  \frac{C_{2}^{1-\sigma}}{1-\sigma}
+-\frac{N_{1}^{1+\rho}}{1+\rho} - \beta \frac{N_2^{1+\rho}}{1+\rho}      
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 + \frac{B_2}{R}\\
+     C_2=&w_2 N_2 + B_2
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+    \item Exprese el problema de maximización de la economía para dos períodos.
+    \item Encuentre el Euler-Lagrange de consumo.
+    \item Encuentre la oferta de trabajo para cada período
+    \item  Explique: ¿Cómo el incremento de $\sigma$ afecta el comportamiento de las familias y que impacto tiene en oferta de trabajo?
+\end{enumerate}
+
+\newpage
+\item La empresa productora de bienes y servicios desea maximizar sus beneficios y está sujeto a su función de producción como se muestra a continuación.(considere dos periodos, donde t = 1, 2). 
+
+\begin{equation*}
+\max_{N,K} \Pi_{1,t} =Y_t -w_tN_t - z_t K_t
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_t=A_t K_t^\alpha N^{1-\alpha}_t
+\end{align*}
+
+Además, se sabe que las empresas productoras de capital tienen un
+problema intertemporal, y que al igual que las empresas productoras
+de bienes desean maximizar sus beneficios.
+
+\begin{equation*}
+\max_{I_1, K_2}\Pi =(Z_1k_1-I_1)+\frac{1}{R}z_2K_2
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} K_2=K_1(1-\gamma)+I_1
+\end{align*}
+
+
+\begin{enumerate}[label=\alph*)]
+\item Obtenga las condiciones de primer orden de las firmas productoras de bienes y servicios.
+\item Obtenga la demanda de trabajo y de capital.
+\item Obtenga las C.P.O de las firmas productoras de capital considerando que exisite una depreciación total ($\gamma =1$).
+\item Suponga que ahora existe un modelo de depreciación ($\gamma<1$), encuentre las condiciones de primer orden de la empresa productora de capital y explique como afecta la tasa de depreciación en los óptimos.
+\item El gobierno decide una nueva política fiscal, por lo cual considera pertinente un impuesto a las utilidades de las empresas productora de capital, donde existe una depreciación total. 
+El problema ahora de la máximización de las firmas, es el siguiente:
+\end{enumerate}
+
+\begin{equation*}
+\max_{I_1, K_2}\Pi =-I_1(1-\tau_1)   +\frac{1}{R}z_2K_2(1-\tau_2)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} K_2=K_1(1-\gamma)+I_1
+\end{align*}
+
+Se pide que evalúe los siguientes casos, suponiendo que $\frac{dR}{dt}=0$: 
+\begin{enumerate}[label=\alph*.\arabic*)]
+        \item Caso 1: $\tau_1 = \tau_2 = \tau$
+        \item Caso 2: $\tau_1 > \tau_2 $
+        \item Caso 3: $\tau_1 < \tau_2 $
+    \end{enumerate}
+
+\newpage
+  \item Suponga que la economía se encuentra en equilibrio y se puede resumir de la siguiente manera:
+
+\textbf{Familias}
+
+\begin{equation*}
+\max U(C_t,N_t): ln (C_1)- \frac{N_1^2}{2} + \beta ln (C_2)  
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 -\frac{B_2}{R}+ \Pi_1-T_1\\
+     C_2=&B_2 + \Pi_2-T_2
+\end{align*}
+
+\textbf{Las Firmas productoras de bienes}
+
+t=1
+\begin{equation*}
+\max_{N} :Y_1 -w_1N_1 
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_1=A_1 N_1
+\end{align*}
+t=2
+\begin{equation*}
+\max_{K} :Y_2  - z_2 K_2
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_2=A_2 K_2
+\end{align*}
+
+\textbf{Las firmas productoras de capital}
+
+\begin{equation*}
+\max_{K_2} =-K_2+\frac{1}{R}z_2K_2
+\end{equation*}
+
+
+\textbf{Gobierno}
+
+\begin{equation*}
+    G_1= T_1 + \frac{B_2}{R}
+\end{equation*}
+\begin{equation*}
+    G_2= T_2 - B_2
+\end{equation*}
+Suponga que $G_1=G_2$=0
+
+\begin{enumerate}[label=\alph*)]
+    \item Exprese el Lagrangeano de las familias y encuentre las C.P.O correspondientes. Considere $\rho$=1.
+    \item Encuentre el Euler Lagrange de consumo y la oferta de trabajo para t=1 y t=2.
+    \item Encuentre las C.P.O de las empresas que venden bienes y servicios.
+    \item Encuentre las demandas de capital y trabajo.
+    \item Encuentre las C.P.O de la empresa productora de capital.
+   \item Encuentre la solución del modelo suponiendo un choque tecnológico en el primer periodo
+(A1 $>$ A2 = 1). Grafique.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}
