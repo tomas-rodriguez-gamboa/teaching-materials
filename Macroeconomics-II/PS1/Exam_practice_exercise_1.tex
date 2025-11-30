@@ -1,0 +1,87 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ejercicio de práctica para el examen 1}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Septiembre del 2024
+\end{center}
+\end{flushleft}
+
+
+\textbf{Familias}
+
+\begin{equation*}
+\max U(C_t,N_t): ln (C_1)- \frac{N_1^2}{2} + \beta ln (C_2)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 - \frac{B_2}{R}+ \Pi_{1,1} + \Pi_{2,1}-T_1\\
+     C_2=& B_2 + \Pi_{1,2} + \Pi_{2,2} -T_2
+\end{align*}
+
+\textbf{Las Firmas productoras de bienes}
+
+t=1
+\begin{equation*}
+\max_{N} \Pi_{1,1} =A_1N_1 -w_1N_1 
+\end{equation*}
+
+t=2
+\begin{equation*}
+\max_{K} \Pi_{1,2} =A_2 K_2- z_2 K_2
+\end{equation*}
+\\
+Suponga  A1= 1 y  A2 $>$1,0
+\\
+
+\textbf{Las firmas productoras de capital}
+
+\begin{equation*}
+\max_{K_2}\Pi = -K_2+\frac{1}{R}z_2K_2
+\end{equation*}
+
+
+\textbf{Gobierno}
+
+\begin{equation*}
+    G_1= T_1 + \frac{B_2}{R}
+\end{equation*}
+\begin{equation*}
+    G_2= T_2 - B_2
+\end{equation*}
+
+
+\begin{enumerate}[label=\alph*)]
+ \item Encuentre las C.P.O correspondientes. 
+ \item Encuentre el equilibrio general en ambos períodos.
+(1 = A1 $<$ A2)
+\item  Encuentre los efectos de la economía para $G_1> G_2=0$
+\item  Encuentre los efectos de la economía para $0=G_1<G_2$
+
+
+\end{enumerate}
+
+
+\end{document}
