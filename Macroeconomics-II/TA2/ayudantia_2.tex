@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 2}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudantes:} Tomás Rodríguez Gamboa. \\
+\textbf{Fecha:} Agosto del 2024
+\end{center}
+\end{flushleft}
+
+
+\section*{Resumen}
+\noindent
+Entender cómo los familias toman la decisión de consumo y  de su oferta de trabajo, dispuestos a sustituirlo por ocio en cada período.
+\\
+\begin{flushleft}
+\section*{Ejercicios}
+\end{flushleft}
+
+\begin{enumerate}
+    \item Suponga las familias desean maximizar su utilidad, donde el problema de maximización queda expresado de la siguiente manera:
+\end{enumerate}
+\begin{equation*}
+\max U(C_t,N_t): \sum_{t=1}^T \beta^{t-1}\{ \frac{C_{t}^{1-\sigma}}{1-\sigma}-\frac{N_{t}^{1+\rho}}{1+\rho} \}    
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 + \frac{B_2}{R}\\
+     C_2=&w_2 N_2 - B_2
+\end{align*}
+
+
+\begin{enumerate}[label=\alph*)]
+
+\item Exprese el problema de maximización de la economía para dos períodos.
+\item Encuentre Euler-Lagrange de consumo.
+\item Encuentre la oferta de trabajo para cada período
+\item Explique como $\sigma$ afecta el comportamiento de las familias para los siguientes 3 casos:
+\begin{enumerate}[label=\alph*.\arabic*)]
+        \item $\beta$R = 1.
+        \item $\beta$R $>$ 1.
+        \item $\beta$R $<$ 1.
+    \end{enumerate}
+
+
+
+\end{enumerate}
+
+
+\end{document}
