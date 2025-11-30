@@ -1,0 +1,56 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Preparación Solemne 2}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García.\\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa. \\
+\textbf{Fecha:} Noviembre del 2024.
+\end{center}
+\end{flushleft}
+
+
+\section{Shock política monetaria.}
+
+\begin{gather}
+    y_t=t_{t+1}-(i_t-\pi_{t+1})\\[10pt]
+    \pi=\beta\pi_{t+1}+\lambda y_t\\[10pt]
+    i_t=\rho i_{t-1}+\phi\pi_t
+\end{gather}
+Variables auxiliares:
+\begin{gather}
+    i_t=\phi \pi_t+w_t\\[10pt]
+    w_{t+1}=\rho w_t+\varepsilon_{t+1}^i
+\end{gather}
+
+\section{Shock producto externo.}
+\begin{gather}
+\hat{p}_t+\overline{C}\hat{c}_t=\hat{p}_{t+1}+\overline{C}\hat{c}_{t+1}-\theta b_{t+1}\\[10pt]
+P_t+\hat{c}\overline{C}_t+\overline{B}\hat{b}_t=\hat{y}_{t+1}+\frac{B}{R}(1-\theta)\hat{b}_{t+1}\\[10pt]
+\hat{p}_{t+1}=\rho\hat{p}_t+v_{t+1}
+\end{gather}
+
+
+
+\end{document}
