@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 5}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J García \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Octubre del 2024
+\end{center}
+\end{flushleft}
+
+\section*{Resumen}
+En esta sección, introducimos dinero al modelo real del capítulo anterior y estudiamos los efectos de este nuevo ingrediente en la tasa de inflación. 
+\\
+\section*{Ejercicio}
+
+\begin{enumerate}  \item las familias desean maximizar su utilidad, donde el problema de maximización queda expresado de la siguiente manera:  
+\end{enumerate}
+\begin{equation*}
+\max U(C_t,B_t, M_t): ln(C_1)+ \beta ln(C_2) + ln \left(\frac{M_1}{P_1}\right)+\beta ln \left(\frac{M_2}{P_2}\right)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} P_1 C_1=&P_1 Y + \frac{B_2}{R}- M_1 - T_1\\
+     P_2 C_2=&P_2 Y - B_2 + M_1 - M_2 - T_2
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+\item Transformar las variables a términos reales.
+\item Plantear el problema de máximización. 
+\item Encontrar Euler- Lagrange de consumo.
+\item Resolver los siguientes casos
+\begin{enumerate}[label=\alph*.\arabic*)]
+        \item Se desea que $C_2=C_1$.
+        \item No se interviene .
+        \end{enumerate}
+\item Resuelva ahora suponiendo que: 
+\begin{equation*}
+    g_1= - \frac{b_2}{R}(1+\pi_2) + t_1 + m_1,
+\end{equation*}
+\begin{equation*}
+        g_2= b_2- \frac{m_1}{(1+\pi_2)}  + m_2 + t_2,
+\end{equation*}
+donde: 
+
+$g_1=g_2=0$.
+
+\item Encuentre: \textbf{demanda de dinero para ambos periodos y oferta de dinero.}
+\item Resuelva el equilibrio monetario.
+\end{enumerate}
+\end{document}
