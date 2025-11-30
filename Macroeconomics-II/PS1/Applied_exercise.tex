@@ -1,0 +1,79 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ejercicio Aplicado.}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudantes:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Septiembre del 2024
+\end{center}
+\end{flushleft}
+
+
+\section*{Caso}
+
+\begin{enumerate}
+\item En tiempos de pandemia la tasa de interés de política monetaria llegó a cifras máximas historicas. Por otro lado, en la última Reunión de Política Monetaria, el consejo del Banco Central de Chile acordó reducir la tasa de interés de política monetaria (TPM) acercandose a la tasa objetivo.
+\end{enumerate}
+\noindent
+Considere el siguiente problema de maximización de las familias, que desean maximizar su utilidad:
+
+\begin{equation*}
+    \max U(C_t,N_t): ln(C_1)-\frac{N_{1}^{1-\rho}}{1-\rho}+\beta ln(C_2)-\beta \frac{N_{2}^{1-\rho}}{1-\rho}
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 + \frac{B_2}{R}\\
+     C_2=&w_2 N_2 - B_2
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+\item Encuentre Euler-Lagrange de consumo.
+\item Encuentre la oferta de trabajo para cada período (\(\rho\)  = 1).
+\item Explique intuitivamente y matemáticamente, cómo el anuncio de la disminución de la TPM por parte del Banco Central
+afecta el comportamiento del consumo y trabajo de las familias para ambos períodos y determinar si $\beta$R corresponde a:
+
+\begin{enumerate}[label=\alph*.\arabic*)]
+        \item $\beta$R = 1.
+        \item $\beta$R $>$ 1.
+        \item $\beta$R $<$ 1.
+    \end{enumerate}
+\end{enumerate}
+\\
+
+\noindent
+\textbf{Ayuda de memoria:} $\beta$ representa la tasa de descuento (preferencia del consumidor por el consumo presente en comparación con el consumo futuro).
+\\
+
+\noindent
+$\beta$=$\frac{1}{1+\delta}$ ; $\delta$= impaciencia del consumidor. 
+\noindent
+\\
+$\beta$$<$ 1 = el consumidor prefiere el consumo presente al consumo futuro.
+\noindent
+\\
+$\beta$$>$ 1 = preferencia por el consumo futuro sobre el presente.
+
+
+
+\end{document}
