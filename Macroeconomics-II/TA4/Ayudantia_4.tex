@@ -1,0 +1,97 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 4}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Septiembre del 2024
+\end{center}
+\end{flushleft}
+
+
+\section*{Resumen}
+Se supondrá una economía simple, con el fin de entender cómo cambian las decisiones de los agentes económicos frente a choques
+tecnológicos, es decir, sus incentivos a consumir, trabajar, producir bienes, capital.
+\\
+
+
+\textbf{Familias}
+
+\begin{equation*}
+\max U(C_t,N_t): ln (C_1)- \frac{N_1^2}{2} + \beta ln (C_2)
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} C_1=&w_1 N_1 - \frac{B_2}{R}+ \Pi_{1,1} + \Pi_{2,1}-T_1\\
+     C_2=& B_2 + \Pi_{1,2} + \Pi_{2,2} -T_2
+\end{align*}
+
+\textbf{Las Firmas productoras de bienes}
+
+t=1
+\begin{equation*}
+\max_{N,K} \Pi_{1,1} =Y_1 -w_1N_1 
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_1=A_1 N_1
+\end{align*}
+t=2
+\begin{equation*}
+\max_{N,K} \Pi_{1,2} =Y_2  - z_2 K_2
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_2=A_2 K_2
+\end{align*}
+
+\textbf{Las firmas productoras de capital}
+
+\begin{equation*}
+\max_{I_1, K_2}\Pi =(Z_1k_1-I_1)+\frac{1}{R}z_2K_2
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} K_2=I_1
+\end{align*}
+
+\textbf{Gobierno}
+
+\begin{equation*}
+    G_1= T_1 + \frac{B_2}{R}
+\end{equation*}
+\begin{equation*}
+    G_2= T_2 - B_2
+\end{equation*}
+Suponga que $G_1=G_2$=0
+
+\begin{enumerate}[label=\alph*)]
+ \item Encuentre las C.P.O correspondientes. 
+ \item Encuentre el equilibrio en ambos períodos.
+    \item Encuentre la solución del modelo suponiendo un shock tecnológico en el primer periodo
+(A1 $>$ A2 = 1). Grafique.
+
+ \item Encuentre la solución del modelo suponiendo un shock tecnológico en el segundo periodo
+(1 = A1 $<$ A2). Grafique.
+\end{enumerate}
+
+
+\end{document}
