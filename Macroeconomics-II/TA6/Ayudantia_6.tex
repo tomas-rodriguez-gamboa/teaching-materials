@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 6}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudante:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} 05 Noviembre 2024
+\end{center}
+\end{flushleft}
+
+
+\begin{enumerate}
+    \item  Modelo Neo Keynesiano, suponga la siguiente economía:
+\end{enumerate}
+
+\begin{gather}
+c_t=c_{t+1} - (r_t- \pi_{t+1})+\mu_t^d\\[10pt]
+w_t=\rho w_{t-1} + (1-\rho)(c_t + n_t)\\[10pt]
+y_t=a_t+n_t\\[10pt]
+cmg_t^r=w_t\\[10pt]
+\pi_t=\beta \pi_{t+1}+\lambda cmg_t^r + \mu_t^s\\[10pt]
+r_t=\phi \pi_t + \mu_t^m\\[10pt]
+y_t=c_t
+\end{gather}
+
+\begin{enumerate}
+ \item Analice un shock de oferta ($\mu_t^s > 0$), suponiendo que ($\rho$ = 0). Grafique los impulsos
+respuesta de la economía.
+\item Analice un shock de oferta ($\mu_t^s
+> 0$), suponiendo que ($\rho > 0$). Grafique los impulsos
+respuesta de la economía.
+\item  Analice un shock de demanda ($\mu_t^d
+> 0$), suponiendo que( $\rho > 0. $ )Grafique los impulsos
+respuesta de la economía.
+\end{enumerate}
+
+
+\end{document}
