@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+\geometry{top=2cm,bottom=2cm,left=2cm,right=2cm}
+\titlespacing*{\section}{0pt}{0cm}{0cm}
+\begin{document}
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=1.5cm]{uah.jpg}} % Ruta al logo de la UDP
+\fancyhead[C]{Macroeconomía II  }
+\fancyhead[R]{Universidad Alberto Hurtado \\ Facultad de Economía y Negocios}
+\fancyfoot{}
+% Sección de la portada
+\titleformat{\section}
+  {\centering\Large\bfseries}
+  {\thesection}{1em}{}
+\vspace*{0,1cm}
+\section*{Ayudantía 3}
+\begin{flushleft}
+\begin{center}
+\textbf{Profesor:} Carlos J. García \\
+\textbf{Ayudantes:} Tomás Rodríguez Gamboa \\
+\textbf{Fecha:} Septiembre del 2024
+\end{center}
+\end{flushleft}
+
+
+\section*{Resumen}
+Analizar como las firmas productoras de bienes y capital interactúan de forma conjunta.
+
+\section*{Ejercicios Inversión}
+\noindent
+\begin{enumerate}
+    \item La empresa productora de bienes desea maximizar beneficios y está sujeto a su función de producción, como se muestra a continuación.    
+\end{enumerate}
+
+
+\begin{equation*}
+\max_{N,K} \Pi_{1,t} =Y_t -w_tN_t - z_t K_t
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} Y_t=A_t K_t^\alpha N^{1-\alpha}_t
+\end{align*}
+\noindent
+Además, se sabe que las empresas productoras de \textbf{capital} tienen un
+problema intertemporal, y que al igual que las empresas productoras
+de bienes desean maximizar sus beneficios.
+
+
+\begin{equation*}
+\max_{I_1, K_2}\Pi =(Z_1k_1-I_1)+\frac{1}{R}z_2K_2
+\end{equation*}
+\begin{align*}
+    s.a \hspace{1cm} K_2=K_1(1-\gamma)+I_1
+\end{align*}
+
+\begin{enumerate}[label=\alph*)]
+\item Obtenga las condiciones de primer orden de las firmas productoras de bienes y servicios.
+\item Obtenga la demanda de trabajo y de capital.
+\item Obtenga las C.P.O de las firmas productoras de capital considerando que exisite una depreciación total ($\gamma =1$).
+\item Suponga que ahora existe un modelo de depreciación ($\gamma<1$), encuentre las condiciones de primer orden de la empresa productora de capital y explique como afecta la tasa de depreciación en los óptimos.
+\end{enumerate}
+
+\end{document}
